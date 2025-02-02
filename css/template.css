@@ -88,7 +88,7 @@
   .al h1 {
     font-size: 1.3em;
     margin-left: 10px;
-    margin-top: 17px;
+    /* margin-top: 17px; */
 }
 
 .form .row {
@@ -140,42 +140,300 @@
 }
 
 .inner-form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 83%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 83%;
 }
 
 form {
-    width: 60%;
-    border-radius: 10px;
+  width: 60%;
+  border-radius: 10px;
 }
 
 .w40 {
-    order: 2;
-    text-align: right; 
+  order: 2;
+  text-align: right; 
 }
 
 .w60 {
-    order: 1; 
-    text-align: left; 
+  order: 1; 
+  text-align: left; 
 }
 
 .header {
   width: 100%;
   background: #333;
   color: #fff;
-  padding: 5px 20px;
+  /* padding: 5px 20px; */
 }
 
 .wrapper {
+  /* display: flex;
+  justify-content: space-between; 
+  align-items: center;  */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.wrapper123 {
   display: flex;
-  justify-content: space-between; /* Розташування елементів по краях /
-  align-items: center; / Вирівнювання по центру */
+  justify-content: space-between; 
+  align-items: center;
 }
 
 body {
-  background-color: #e1f3f5;
+  background-color: #f5fafe; /* Светло-голубой фон */
+}
+
+#spinner {
+  background: #919fa640 url('file:///D:/Практика%204%20курс/images/loader.gif') no-repeat;
+  background-position: center;
+  background-size: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999;
+}
+
+.flex.panel {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 0;
+}
+
+.flex.panel .w60.ptb20.ac {
+  /* padding-right: 284px; */
+  align-content: center;
+  text-align: center;
+}
+
+/* .wrapper .table { 
+  display: flex;
+  flex-direction: column-reverse;
+} */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #c1c4c9;
+}
+
+table a {
+  text-decoration: none;
+  color: black;
+}
+
+.table {
+  direction: rtl; /* Устанавливаем стандартное направление текста (слева направо) */
+  background-color: white;
+  width: 100%; /* Устанавливаем ширину таблицы */
+}
+
+.table th.id, .table td.id {
+  text-align: center; /* Выравниваем текст по левому краю */
+  padding: 10px; /* Внутренние отступы для удобства чтения */
+}
+
+.table th:last-child,
+.table td:last-child {
+  text-align: center; /* Выравниваем последний столбец по правому краю */
+}
+
+/* .table tr:hover {
+  background-color: #c1c4c9;
+} */
+
+.table th {
+  font-weight: bold; /* Делаем заголовки жирными */
+  border-bottom: 1px solid #c1c4c9; /* Нижняя граница для заголовков */
+}
+
+.table td {
+  border-bottom: 1px solid #c1c4c9; /* Нижняя граница для ячеек */
+  border-right: 1px solid #c1c4c9;
+}
+
+/* .table table {
+  direction: ltr; 
+} */
+
+tbody tr:first-child {
+  background-color: #f3f3f3
+}
+
+tbody tr:last-child {
+  background-color: #f3f3f3
+}
+
+.w200 {
+  width: 20%;
+}
+
+.w600 {
+  width: 60%;
+}
+
+.w20.w200.ptb30.acr {
+  align-content: normal;
+  text-align: right;
+}
+
+input[type="date"] {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  /* border-width: 0.5px;
+  border-color: #c6d7e6; */
+  text-align: center;
+  border: 0.5px solid #ccc;
+}
+
+th.id, td.id {
+  width: 5%;
+}
+.id {
+  text-align: center;
+  width: 50px;
+}
+th.actions, td.actions {
+  width: 10%;
+}
+
+.actions {
+  text-align: center;
+}
+
+.table th, .table td {
+  text-align: right;
+  padding: 10px
+}
+
+/* */
+
+.popup-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+  z-index: 999; /* Поверх всех элементов */
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Центрирование окна */
+  background-color: #fff; /* Белый фон */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для объема */
+  z-index: 1000; /* Поверх фона */
+  /* padding: 20px; */
+  max-width: 90vw; /* Максимальная ширина окна (адаптивно для маленьких экранов) */
+  width: 500px; /* Стандартная ширина окна */
+  max-height: 80vh; /* Максимальная высота окна */
+  overflow-y: auto; /* Скролл, если контент превышает высоту окна */
+}
+
+.flex1 {
+  display: flex; /* Flexbox для выравнивания */
+  justify-content: space-between; /* Распределение элементов по краям */
+  align-items: center; /* Вертикальное выравнивание по центру */
+  flex-direction: row-reverse;
+}
+
+.head-popup {
+  display: flex; /* Включаем Flexbox */
+  justify-content: space-between; /* Распределение между элементами */
+  align-items: center; /* Выравнивание по вертикали */
+  width: 100%; /* Растянуть на всю ширину */
+  padding: 0px 20px; /* Внутренние отступы */
+  border-bottom: 1px solid #ddd; /* Линия снизу */
+  box-sizing: border-box; /* Учитывать padding в ширине */
+  background-color: #dfe3e9;
+}
+
+.head-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Темный текст */
+}
+
+.w80 {
+  flex: 0 0 80%; /* Ширина 80% */
+}
+
+.w202 {
+  flex: 0 0 19%; /* Ширина 20% */
+  text-align: right; /* Выравнивание по правому краю */
+  align-content: center;
+}
+
+.ptb20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.al {
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* gap: 10px; */
+  text-align: left;
+  font-size: 16px;
+}
+
+a {
+  color: #888; /* Серый цвет ссылки */
+  text-decoration: none; /* Без подчеркивания */
+  font-size: 16px;
+}
+
+/* a:hover {
+  color: #f00; 
+} */
+
+.popup-inner {
+  width: 100%; /* Растянуть на всю ширину */
+  padding: 20px 20px; /* Внутренние отступы */
+  color: #555; /* Цвет текста контента */
+  font-size: 14px;
+  line-height: 1.6; /* Увеличенный межстрочный интервал */
+}
+
+i:hover {
+  color: #01c477;
+  transition: all 0.2s;
+}
+
+.botBtns {
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.botBtns a {
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #00c477;
+  color: white;
+  font-size: 14px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+.botBtns a:hover {
+  background-color: #158a7d;
+}
+
+.fas.fa-info-circle {
+  padding-bottom: 25px;
 }
 

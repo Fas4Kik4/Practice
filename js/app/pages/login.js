@@ -38,7 +38,7 @@ export const login = {
         <msg ref="msg"/> 
         <div id="left-area" class="w40"> 
             <div class="header"> 
-                <div class="wrapper flex"> 
+                <div class="wrapper flex wrapper123"> 
                     <div class="w40 logo"> 
                         <img :src="parent.url+'/app/views/images/logo.svg'" />
                     </div> 
