@@ -7,11 +7,6 @@
   font-family: Arial, sans-serif;
 }
 
-
-/* .flex {
-  text-align: right;
-} */
-
 .alertMsg{ 
   font-size: inherit; 
   padding: 20px 10px; 
@@ -57,10 +52,6 @@
     95% { opacity:0.95; margin-left:-2%;} 
     100% { opacity: 1; margin-left:0;} 
     }
-
-   /* .w60 { 
-    width: 60%;
-  } */
 
   .w40 {
     width: 40%;
@@ -186,7 +177,7 @@ form {
 }
 
 body {
-  background-color: #f5fafe; /* Светло-голубой фон */
+  background-color: #f5fafe;
 }
 
 #spinner {
@@ -230,19 +221,19 @@ table a {
 }
 
 .table {
-  direction: rtl; /* Устанавливаем стандартное направление текста (слева направо) */
+  direction: rtl;
   background-color: white;
-  width: 100%; /* Устанавливаем ширину таблицы */
+  width: 100%;
 }
 
 .table th.id, .table td.id {
-  text-align: center; /* Выравниваем текст по левому краю */
-  padding: 10px; /* Внутренние отступы для удобства чтения */
+  text-align: center;
+  padding: 10px;
 }
 
 .table th:last-child,
 .table td:last-child {
-  text-align: center; /* Выравниваем последний столбец по правому краю */
+  text-align: center;
 }
 
 /* .table tr:hover {
@@ -250,12 +241,12 @@ table a {
 } */
 
 .table th {
-  font-weight: bold; /* Делаем заголовки жирными */
-  border-bottom: 1px solid #c1c4c9; /* Нижняя граница для заголовков */
+  font-weight: bold;
+  border-bottom: 1px solid #c1c4c9;
 }
 
 .table td {
-  border-bottom: 1px solid #c1c4c9; /* Нижняя граница для ячеек */
+  border-bottom: 1px solid #c1c4c9;
   border-right: 1px solid #c1c4c9;
 }
 
@@ -314,64 +305,61 @@ th.actions, td.actions {
   padding: 10px
 }
 
-/* */
-
 .popup-back {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
-  z-index: 999; /* Поверх всех элементов */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 
 .popup {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Центрирование окна */
-  background-color: #fff; /* Белый фон */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для объема */
-  z-index: 1000; /* Поверх фона */
-  /* padding: 20px; */
-  max-width: 90vw; /* Максимальная ширина окна (адаптивно для маленьких экранов) */
-  width: 500px; /* Стандартная ширина окна */
-  max-height: 80vh; /* Максимальная высота окна */
-  overflow-y: auto; /* Скролл, если контент превышает высоту окна */
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000; 
+  max-width: 90vw; 
+  width: 500px; 
+  max-height: 80vh; 
+  overflow-y: auto;
 }
 
 .flex1 {
-  display: flex; /* Flexbox для выравнивания */
-  justify-content: space-between; /* Распределение элементов по краям */
-  align-items: center; /* Вертикальное выравнивание по центру */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
   flex-direction: row-reverse;
 }
 
 .head-popup {
-  display: flex; /* Включаем Flexbox */
-  justify-content: space-between; /* Распределение между элементами */
-  align-items: center; /* Выравнивание по вертикали */
-  width: 100%; /* Растянуть на всю ширину */
-  padding: 0px 20px; /* Внутренние отступы */
-  border-bottom: 1px solid #ddd; /* Линия снизу */
-  box-sizing: border-box; /* Учитывать padding в ширине */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
+  padding: 0px 20px;
+  border-bottom: 1px solid #ddd; 
+  box-sizing: border-box;
   background-color: #dfe3e9;
 }
 
 .head-title {
   font-size: 18px;
   font-weight: bold;
-  color: #333; /* Темный текст */
+  color: #333; 
 }
 
 .w80 {
-  flex: 0 0 80%; /* Ширина 80% */
+  flex: 0 0 80%; 
 }
 
 .w202 {
-  flex: 0 0 19%; /* Ширина 20% */
-  text-align: right; /* Выравнивание по правому краю */
+  flex: 0 0 19%; 
+  text-align: right; 
   align-content: center;
 }
 
@@ -391,21 +379,17 @@ th.actions, td.actions {
 }
 
 a {
-  color: #888; /* Серый цвет ссылки */
-  text-decoration: none; /* Без подчеркивания */
+  color: #888; 
+  text-decoration: none; 
   font-size: 16px;
 }
 
-/* a:hover {
-  color: #f00; 
-} */
-
 .popup-inner {
-  width: 100%; /* Растянуть на всю ширину */
-  padding: 20px 20px; /* Внутренние отступы */
-  color: #555; /* Цвет текста контента */
+  width: 100%; 
+  padding: 20px 20px; 
+  color: #555;
   font-size: 14px;
-  line-height: 1.6; /* Увеличенный межстрочный интервал */
+  line-height: 1.6; 
 }
 
 i:hover {
