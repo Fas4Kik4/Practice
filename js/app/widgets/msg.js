@@ -5,8 +5,8 @@ export const msg = {
             success:"", 
             t1:"", 
             t2:"", 
-            // confirmTitle: "Please confirm next action", 
-            // confirm:"", 
+            confirmTitle: "Please confirm next action", 
+            confirm:"", 
             code: 0, 
             interval:"" 
         } 
@@ -27,7 +27,7 @@ export const msg = {
         }, 
         fadeOut (el, timeout) { 
             el.style.opacity = 1; 
-            el.style.transition = opacity `${timeout}ms`; 
+            el.style.transition = `opacity ${timeout}ms`; 
             el.style.opacity = 0;
 
             setTimeout(() => { 
@@ -101,7 +101,7 @@ export const msg = {
                     <i class="fas fa-check-circle"></i> {{success}} 
                 </div> 
             </div> 
-            <popup ref="confirm" title="Please confirm next action"> 
+            <popup ref="confirm" :title="confirmTitle"> 
                 <div class=" al"> 
                     <i class="fas fa-info-circle"></i> {{confirm}}
                     <div class="botBtns"> 
