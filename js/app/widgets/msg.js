@@ -29,7 +29,6 @@ export const msg = {
             el.style.opacity = 1; 
             el.style.transition = `opacity ${timeout}ms`; 
             el.style.opacity = 0;
-
             setTimeout(() => { 
                 el.style.display = 'none'; 
             }, timeout); 
@@ -49,7 +48,6 @@ export const msg = {
                     },3000); 
                 },100);
             },
-
             alertFun (msg) {
                 this.alert = msg;
 
@@ -59,7 +57,6 @@ export const msg = {
                 clearTimeout(self.t2); 
                 self.t = setTimeout(function(){ 
                     const block = document.querySelector('.alertMsg'); 
-
                     self.fadeIn(block, 1000, 'flex'); 
                     self.t2 = setTimeout(function(){ 
                         self.fadeOut(block, 1000); 
@@ -102,7 +99,7 @@ export const msg = {
                 </div> 
             </div> 
             <popup ref="confirm" :title="confirmTitle"> 
-                <div class=" al"> 
+                <div class="al"> 
                     <i class="fas fa-info-circle"></i> {{confirm}}
                     <div class="botBtns"> 
                         <a class="btnS" href="#" @click.prevent="code=1">Yes</a> 
@@ -110,7 +107,5 @@ export const msg = {
                     </div> 
                 </div> 
             </popup>
-            
             `
-        
         };

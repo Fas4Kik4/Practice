@@ -8,7 +8,7 @@ import {toogle} from './widgets/toogle.js';
 // import {popup} from './widgets/popup.js';
 // import {msg} from './widgets/msg.js';
 // import {toogle} from './widgets/toogle.js';
-// import {img} from './widgets/img.js';
+import {img} from './widgets/img.js';
 
 document.addEventListener('DOMContentLoaded', function(){
     const main = {
@@ -59,12 +59,28 @@ document.addEventListener('DOMContentLoaded', function(){
             this.page('/');
             window.localStorage.setItem('user','');
         },
+        scrollTop(){
+            setTimeout(function(){
+                window.scroll({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            },50);
+        },
+        scrollBottom(){
+            setTimeout(function(){
+                window.scroll({
+                    top: 1000,
+                    behavior: 'smooth'
+                });
+            },50);
+        },
         page: function (path=""){
             this.$router.replace(path);
             this.title=this.$route['name'];
             document.title=this.$route ['name'];
         },
-        toFormData(obj) {
+        toFormData:function(obj) {
             var fd = new FormData();
 
             for (var x in obj) {
@@ -93,6 +109,7 @@ document.addEventListener('DOMContentLoaded', function(){
     .component('popup',popup)
     .component('msg',msg)
     .component('toogle',toogle)
+    .component('Image',img)
     .use(router)
     .mount('#content')
 });
