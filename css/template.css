@@ -28,7 +28,7 @@
   animation: showFromLeft 0.3s linear;
 } 
 
-  .successMsg{ 
+.successMsg{ 
   font-size: inherit; 
   padding: 20px 0; 
   position: fixed; 
@@ -42,101 +42,101 @@
   background-color: rgba(218, 249, 223, 0.75); 
   box-shadow: 0px 0 10px 0px rgb(11 205 61/50%); 
   animation: showFromLeft 0.3s normal;
-  }
-
-  @keyframes showFromLeft { 
-    0% { opacity:0;margin-left:-100%;} 
-    25% { opacity:0.2; margin-left:-50%;} 
-    35% { opacity:0.4; margin-left:-20%;} 
-    50% { opacity:0.8; margin-left:-15%;} 
-    65% { opacity:0.9; margin-left:-12%;} 
-    75% { opacity:0.9; margin-left:-10%;} 
-    80% { opacity:0.9; margin-left:-8%;} 
-    85% { opacity:0.95; margin-left:-6%;} 
-    90% { opacity:0.95; margin-left:-4%;} 
-    95% { opacity:0.95; margin-left:-2%;} 
-    100% { opacity: 1; margin-left:0;} 
-    }
-
-   /* .w60 { 
-    width: 60%;
-  } */
-
-  .w40 {
-    width: 40%;
-  } 
-
-  .flex {
-    display: flex;
-  }
-
-  #right-area {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #left-area {
-    height: 100vh;
-  }
-
-  #right-area img {
-    height: 100%;
-    width: 100%;
-  }
-
-
-  .al h1 {
-    font-size: 1.3em;
-    margin-left: 10px;
-    /* margin-top: 17px; */
 }
 
-.form .row {
-    margin-bottom: 15px;
-}
+@keyframes showFromLeft { 
+  0% { opacity:0;margin-left:-100%;} 
+  25% { opacity:0.2; margin-left:-50%;} 
+  35% { opacity:0.4; margin-left:-20%;} 
+  50% { opacity:0.8; margin-left:-15%;} 
+  65% { opacity:0.9; margin-left:-12%;} 
+  75% { opacity:0.9; margin-left:-10%;} 
+  80% { opacity:0.9; margin-left:-8%;} 
+  85% { opacity:0.95; margin-left:-6%;} 
+  90% { opacity:0.95; margin-left:-4%;} 
+  95% { opacity:0.95; margin-left:-2%;} 
+  100% { opacity: 1; margin-left:0;} 
+  }
 
-.form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 1em;
-}
+  /* .w60 { 
+  width: 60%;
+} */
 
-.form input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-}
+.w40 {
+  width: 40%;
+} 
 
-.btn {
-    width: 100%;
-    padding: 12px;
-    background: #00c477;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-    text-align: center;
-}
-
-.btn:hover {
-    background: #1c7d82;
+.flex {
+  display: flex;
 }
 
 #right-area {
-    width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+#left-area {
+  height: 100vh;
 }
 
 #right-area img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+.al h1 {
+  font-size: 1.3em;
+  margin-left: 10px;
+  /* margin-top: 17px; */
+}
+
+.form .row {
+  margin-bottom: 15px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #00c477;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #1c7d82;
+}
+
+#right-area {
+  width: 60%;
+}
+
+#right-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background-size: cover;
 }
 
 .inner-form {
@@ -233,6 +233,7 @@ table a {
   direction: rtl; /* Устанавливаем стандартное направление текста (слева направо) */
   background-color: white;
   width: 100%; /* Устанавливаем ширину таблицы */
+  margin-top: 10px;
 }
 
 .table th.id, .table td.id {
@@ -263,13 +264,13 @@ table a {
   direction: ltr; 
 } */
 
-tbody tr:first-child {
+/* tbody tr:first-child {
   background-color: #f3f3f3
 }
 
 tbody tr:last-child {
   background-color: #f3f3f3
-}
+} */
 
 .w200 {
   width: 20%;
@@ -586,10 +587,10 @@ visibility: hidden;}
   padding: 18px 18px 22px 18px;
 }
 
-.w70 ul li:first-child {
+/* .w70 ul li:first-child {
   border-bottom: 4px solid #00cb84;
   color: #00cb84;
-}
+} */
 
 .w70 ul li a.router-link-active {
   color: #00cb84;
@@ -784,7 +785,7 @@ table a:hover {
   width: 50%;
 }
 
-.panelTop .w20.ptb20.text-end a {
+.panelTop .w20.ptb20.text-end a:not(.not) {
   flex-direction: row-reverse;
   display: flex;
   border-radius: 5px;
@@ -838,3 +839,146 @@ table a:hover {
   text-align: center;
 }
 
+li:has(a.router-link-active) {
+  border-bottom: 5px solid #00c276;
+  box-sizing: border-box;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f3f3f3;
+}
+.table tbody tr {
+  background-color: #ffffff;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.w10 {
+  width: 10%;
+}
+
+.w20 {
+  width: 20%;
+}
+
+.btnS {
+  /* display: flex; 
+  flex-direction: row-reverse; */
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: #00c477;
+  color: white;
+  font-size: 14px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.btnS:hover {
+  background: #1c7d82;
+  transition: all 0.2s;
+}
+
+.left-wc {
+  text-align: start;
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #f2f6fc;
+  resize: vertical;
+}
+
+.tal * {
+  text-align: left;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.tabs {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  /* text-align: right; */
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs li.active {
+  border-bottom-color: #02b671;
+}
+.tabs li {
+  color: #333;
+  background-color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  box-sizing: border-box;
+  border-bottom: 3px solid #bdbebe;
+  transition: all 0.5s ease;
+}
+li {
+  font-size: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tabs li:hover {
+  background: #a9d2d4;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+form .row input[type="number"], form .row input[type="date"] {
+  text-align: right;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #dfe3e9;
+}
+
+input[type="text"] {
+  background-color: #dfe3e9;
+}
