@@ -230,7 +230,7 @@ table a {
 }
 
 .table {
-  direction: rtl; /* Устанавливаем стандартное направление текста (слева направо) */
+  /* direction: rtl; */
   background-color: white;
   width: 100%; /* Устанавливаем ширину таблицы */
   margin-top: 10px;
