@@ -62,7 +62,7 @@ export const payments = {
                                     {{item.value}}
                                 </a>
                             </td>
-                            <td class="tal">
+                            <td>
                                 <a href="#" @click.prevent="parent.formData = item;$refs.payment.active=1;">
                                     {{item.date_title}}
                                 </a>
