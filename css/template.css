@@ -1027,3 +1027,8 @@ h1 {
 .table tbody td {
   padding: 10px;
 }
+
+.alc2 {
+  align-items: center;
+  align-content: center;
+}
