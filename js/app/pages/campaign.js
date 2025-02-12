@@ -148,7 +148,7 @@ export const campaign = {
                 // }
               }
             }
-            document.getElementById('chartOuter').innerHTML = '<div id="chartHints"><div class="chartHintsViews">Views</div><div class="chartHintsClicks">Clicks</div><canvas id="myChart"></canvas></div>'
+            document.getElementById('chartOuter').innerHTML = '<div id="chartHints"><div class="chartHintsViews">Views</div><div class="chartHintsClicks">Clicks</div></div><canvas id="myChart"></canvas>'
             const ctx = document.getElementById('myChart');
             const xScaleImage = {
               id:"xScaleImage",
@@ -314,13 +314,13 @@ export const campaign = {
       </div>
       <div class="wrapper">
           <div class="flex panel">
-                <div class="w202 ptb20 order2">
+                <div class="w20 text-start">
                     <h2>Ads</h2>
                 </div>
-                <div class="w60 ptb20 ac">
+                <div class="w600 ptb20 ac alc">
                     <input type="date" v-model="date" @change="get()" /> - <input type="date" v-model="date2" @change="get()" />
                 </div>
-                <div class="w202 al ptb20">
+                <div class="w20 ptb20 text-end alc2">
                     <a class="btnS" href="#" @click.prevent="parent.formData={};$refs.ad.active=1"><i class="fas fa-plus"></i> New</a>
                 </div>
           </div>

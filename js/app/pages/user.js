@@ -504,7 +504,7 @@ export const user = {
                                     {{item.date_title}}
                                 </a>
                             </td>
-                            <td>
+                            <td class="tal">
                                 {{item.description}}
                             </td>
                             <td class="actions">
@@ -574,7 +574,7 @@ export const user = {
                             <td class="image">
                                 {{item.size}}
                             </td>
-                            <td>
+                            <td class="tal">
                                 {{item.link}}
                             </td>
                             <td class="id">

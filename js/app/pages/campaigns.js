@@ -198,7 +198,7 @@
                     <input type="date" v-model="date" @change="get()" /> - 
                     <input type="date" v-model="date2" @change="get()" />
                 </div>
-                <div class="w20 ptb20 alc2">
+                <div class="w20 ptb20 alc2 text-end">
                     <a class="btnS" href="#" @click.prevent="parent.formData={};$refs.new.active=1"><i class="fas fa-plus"></i> New</a>
                 </div>
             </div>

@@ -4,9 +4,9 @@ export const popup = {
       return {
         active: 0,
         top: 0,
-        widthVal: '450px',
-        // ml: '-250px',
-        left: '38%',
+        widthVal: '500px',
+        ml: '-250px',
+        left: '50%',
         height: 'auto'
       }
     },
@@ -16,7 +16,7 @@ export const popup = {
           var self = this;
           setTimeout(function() {
             let height = self.$refs.popup.clientHeight / 2;
-            self.top = "calc(54% - " + height + "px)";
+            self.top = "calc(44% - " + height + "px)";
           }, 10);
         }
   

@@ -46,9 +46,8 @@ export const header = {
                         </div>
                     </div>
                     <div class="w10 al" id="user-top" v-if="parent.user && parent.user.user"> 
-                        <div id="user-circle" @click="toogleActive()">{{parent.user.user[0]}}</div> 
-
                     <i @click="toogleActive()" class="fas fa-caret-down"></i> 
+                        <div id="user-circle" @click="toogleActive()">{{parent.user.user[0]}}</div> 
                     <div id="user-info" :class="{active:active==1}"> 
                         <a href="#" @click.prevent="parent.logout();"><i class="fas fa-sign-out-alt"></i> {{parent.user.user}} Log out</a>
                     </div>
