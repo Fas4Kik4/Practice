@@ -50,7 +50,7 @@ export const payments = {
                         <tr>
                             <th class="id">#</th>
                             <th class="id">Value</th>
-                            <th>Date</th>
+                            <th class="tal">Date</th>
                             <th>Description</th>
                         </tr>
                     </thead>
@@ -62,7 +62,7 @@ export const payments = {
                                     {{item.value}}
                                 </a>
                             </td>
-                            <td>
+                            <td class="tal">
                                 <a href="#" @click.prevent="parent.formData = item;$refs.payment.active=1;">
                                     {{item.date_title}}
                                 </a>

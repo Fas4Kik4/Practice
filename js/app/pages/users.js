@@ -169,9 +169,9 @@ export const users = {
                             <td class="id">
                             <toogle :modelValue="item.published" @update:modelValue="item.published = $event;parent.formData = item;action()"/>
                             </td>
-                            <td><router-link :to="'/user/'+item.id">{{item.user}}</router-link></td>
-                            <td>{{item.phone}}</td>
-                            <td>{{item.email}}</td>
+                            <td class="tal"><router-link :to="'/user/'+item.id">{{item.user}}</router-link></td>
+                            <td class="tal">{{item.phone}}</td>
+                            <td class="tal">{{item.email}}</td>
                             <td class="actions">
                                 <router-link :to="'/user/'+item.id">
                                     <i class="fas fa-edit"></i>

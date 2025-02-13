@@ -436,7 +436,7 @@ export const campaign = {
                                 {{item.size}}
                             </a>
                           </td>
-                          <td>
+                          <td class="tal">
                             <a href="#" @click.prevent="parent.formData = item;$refs.ad.active=1;">
                                 {{item.link}}
                             </a>

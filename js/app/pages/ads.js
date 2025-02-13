@@ -92,7 +92,7 @@ export const ads = {
                                     {{item.campaign_title}}
                                 </a>
                             </td>
-                            <td>
+                            <td class="tal">
                                 <a href="#" @click.prevent="parent.formData = item;$refs.new.active=1;">
                                     {{item.link}}
                                 </a>

@@ -285,7 +285,7 @@
                     <td class="id">
                         <toogle v-model="item.published" @update:modelValue="parent.formData = item;action();" />
                     </td>
-                    <td>
+                    <td class="tal">
                         <router-link :to="'/campaign/'+item.id">{{ item.title }}</router-link>
                     </td>
                     <td class="id">

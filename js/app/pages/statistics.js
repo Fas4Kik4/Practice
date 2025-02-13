@@ -154,7 +154,7 @@ export const statistics = {
                                 </a>
                             </td>
                             <td class="image">{{item.campaign_title}}</td>
-                            <td>{{item.link}}</td>
+                            <td class="tal">{{item.link}}</td>
                             <td class="id">
                                 {{item.views}}
                             </td>

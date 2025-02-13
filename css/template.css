@@ -247,7 +247,7 @@ table a {
   margin-top: 10px;
 }
 
-.table th.id, .table td.id {
+.table th.id, .table td.id, .table th.image {
   text-align: center; /* Выравниваем текст по левому краю */
   padding: 10px; /* Внутренние отступы для удобства чтения */
 }
